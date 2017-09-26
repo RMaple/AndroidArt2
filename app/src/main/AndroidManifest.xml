@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.ckt.d22400.androidart">
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".first_chapter.AActivity">
+        </activity>
+        <activity android:name=".first_chapter.BActivity">
+        </activity>
+        <activity android:name=".first_chapter.ImplicitActivity">
+            <intent-filter>
+                <action android:name="1"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="1"/>
+                <category android:name="2"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".second_chapter.IPCActivity"
+            android:process=":IPCA">
+        </activity>
+        <activity
+            android:name=".second_chapter.IPCA2Activity"
+            android:process="com.ckt.d22400.androidart.IPCA2">
+        </activity>
+
+        <service
+            android:name=".second_chapter.BookManagerService"
+            android:process="com.ckt.d22400.androidart.bms"
+            android:enabled="true"
+            android:exported="true">
+        </service>
+    </application>
+
+</manifest>

@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">AndroidArt</string>
+    <string name="first_chapter_text">第一章 Activity的生命周期与启动模式</string>
+    <string name="jump_to_B">跳转到B_Activity</string>
+</resources>
